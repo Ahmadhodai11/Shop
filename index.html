@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>My Shop | Modern Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="shop-name"><i class="fas fa-store"></i> My Shop</div>
+            <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" id="closeSidebar"><i class="fas fa-times"></i></span>
+        <ul>
+            <li><a href="#footer" id="contactLink"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+            <li><button id="darkModeToggle"><i class="fas fa-moon"></i> Dark Mode</button></li>
+            <li><a href="card.html" id="cartLink"><i class="fas fa-shopping-cart"></i> Cart (<span id="cartCount">0</span>)</a></li>
+            <li><a href="wishlist.html" id="wishlistLink"><i class="fas fa-heart"></i> Wishlist (<span id="wishlistCount">0</span>)</a></li>
+            <li><a href="info.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <main class="container">
+        <div class="category-bar" id="categoryBar">
+            <button class="category-btn active" data-category="all">All Products</button>
+        </div>
+
+        <h2 class="section-title" id="categoryTitle">All Products</h2>
+        <div id="productGrid" class="product-grid"></div>
+        <div id="noProducts" class="loading" style="display: none;">No products found in this category.</div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-contact">
+            <span class="contact-item phone-bg"><i class="fas fa-phone-alt"></i> +98 912 345 6789</span>
+            <a href="https://instagram.com/my_shop" target="_blank" class="contact-item instagram-bg"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
